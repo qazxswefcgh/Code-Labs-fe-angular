@@ -1,0 +1,4 @@
+What are data types? - It is a type of programing language
+What are operators used for? - To controll or change data
+What are conditional statements? - True or false statement
+What are loops? - a repeating program element
