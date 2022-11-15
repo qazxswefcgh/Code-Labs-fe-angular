@@ -10,19 +10,19 @@ export class AppComponent {
   newServerName = '';
   newServerContent = '';
 
-  onAddServer() {
+  onAddServer(ServerData: {serverName: string, serverContent: string}) {
     this.serverElements.push({
       type: 'server',
-      name: this.newServerName,
-      content: this.newServerContent
+      name: ServerData.serverName,
+      content: ServerData.serverContent
     });
   }
 
-  onAddBlueprint() {
+  onAddBlueprint(bluepringData: {serverName: string, serverContent: string}) {
     this.serverElements.push({
       type: 'blueprint',
-      name: this.newServerName,
-      content: this.newServerContent
+      name: bluepringData.serverName,
+      content: ServerData.serverContent
     });
   }
 }
